@@ -34,16 +34,7 @@ document.querySelectorAll('#hero .fade-up').forEach(el => {
   setTimeout(() => el.classList.add('visible'), 100);
 });
 
-// ===== PARALLAX HERO =====
-const heroBg = document.getElementById('heroBg');
-if (heroBg) {
-  window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    if (scrolled < window.innerHeight * 1.5) {
-      heroBg.style.transform = `translateY(${scrolled * 0.4}px)`;
-    }
-  }, { passive: true });
-}
+// Parallax deaktiviert — Hero nutzt Video
 
 // ===== LIGHTBOX =====
 const lightbox = document.getElementById('lightbox');
