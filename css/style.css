@@ -237,6 +237,23 @@ a { color: inherit; text-decoration: none; }
 .mt-card-desc { font-size: 13px; color: var(--cream-dark); margin-top: 2px; }
 .mt-card-price { font-family: var(--font-serif); font-size: 22px; color: var(--gold); font-weight: 700; margin-top: auto; }
 .mt-card-full .mt-card-price { margin-top: 0; }
+.mt-allergen { margin-top: 24px; }
+.mt-allergen-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(212,168,83,0.05);
+  border: var(--border-gold);
+  border-radius: 4px;
+  padding: 14px 20px;
+  color: var(--cream-mid);
+  font-size: 13px;
+  transition: background var(--transition), color var(--transition);
+}
+.mt-allergen-link:hover { background: rgba(212,168,83,0.1); color: var(--cream); }
+.mt-allergen-icon { color: var(--gold); font-size: 16px; flex-shrink: 0; }
+.mt-allergen-arrow { margin-left: auto; color: var(--gold); flex-shrink: 0; }
+
 .mt-abo {
   margin-top: 60px;
   border: var(--border-gold);

@@ -1,0 +1,197 @@
+/* ===== ALLERGENE PAGE ===== */
+.allergen-intro {
+  color: var(--cream-mid);
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 28px 0 24px;
+  max-width: 680px;
+}
+
+.allergen-contact-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: rgba(212,168,83,0.06);
+  border: var(--border-gold);
+  border-radius: 4px;
+  padding: 18px 24px;
+  margin-bottom: 56px;
+  color: var(--cream-mid);
+  font-size: 14px;
+}
+
+/* LEGEND */
+.allergen-legend-section {
+  margin-bottom: 56px;
+}
+
+.allergen-legend-section h2 {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--cream);
+  margin-bottom: 24px;
+}
+
+.allergen-legend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.allergen-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--cream-mid);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.abadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--bg-card);
+  border: 1px solid rgba(212,168,83,0.4);
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+/* TABLE */
+.allergen-table-section {
+  margin-bottom: 0;
+}
+
+.allergen-table-section h2 {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--cream);
+  margin-bottom: 6px;
+}
+
+.allergen-table-note {
+  color: var(--text-muted);
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.allergen-table-wrap {
+  overflow-x: auto;
+  border-radius: 4px;
+  border: var(--border-gold);
+}
+
+.allergen-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 700px;
+}
+
+.allergen-table thead tr {
+  background: var(--bg-card);
+}
+
+.allergen-table th {
+  padding: 12px 10px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(212,168,83,0.2);
+  white-space: nowrap;
+}
+
+.allergen-table th.col-dish {
+  text-align: left;
+  padding-left: 20px;
+  min-width: 220px;
+}
+
+.allergen-table tbody tr {
+  border-bottom: 1px solid rgba(212,168,83,0.08);
+  transition: background 0.2s ease;
+}
+
+.allergen-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.allergen-table tbody tr:hover {
+  background: rgba(212,168,83,0.04);
+}
+
+.allergen-table td {
+  padding: 16px 10px;
+  text-align: center;
+  color: var(--text-muted);
+  vertical-align: middle;
+}
+
+.allergen-table td.col-dish {
+  text-align: left;
+  padding-left: 20px;
+  color: var(--cream);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.allergen-table td.yes {
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.dish-sub {
+  display: block;
+  font-size: 11px;
+  color: var(--cream-dark);
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+/* HINTS */
+.allergen-hints ul {
+  list-style: none;
+  padding: 0;
+}
+
+.allergen-hints ul li {
+  color: var(--cream-mid);
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(212,168,83,0.08);
+  padding-left: 20px;
+  position: relative;
+}
+
+.allergen-hints ul li::before {
+  content: '!';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.allergen-hints ul li:last-child {
+  border-bottom: none;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.allergen-hints ul li strong {
+  color: var(--cream);
+}
+
+@media (max-width: 640px) {
+  .allergen-legend-grid { grid-template-columns: 1fr; }
+}
