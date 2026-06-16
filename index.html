@@ -11,16 +11,340 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <nav id="navbar"><!-- Task 2 --></nav>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">Allegro</span>
+        <span class="logo-sub">Pforzheim</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#mittagstisch" class="nav-link">Mittagstisch</a></li>
+        <li><a href="#speisekarte" class="nav-link">Karte</a></li>
+        <li><a href="#ueber-uns" class="nav-link">Über uns</a></li>
+        <li><a href="#galerie" class="nav-link">Galerie</a></li>
+        <li><a href="#kontakt" class="nav-link nav-cta">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <main>
-    <section id="hero"><!-- Task 3 --></section>
-    <section id="mittagstisch"><!-- Task 4 --></section>
-    <section id="ueber-uns"><!-- Task 5 --></section>
-    <section id="speisekarte"><!-- Task 6 --></section>
-    <section id="galerie"><!-- Task 7 --></section>
-    <section id="kontakt"><!-- Task 8 --></section>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg" id="heroBg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <div class="hero-inner">
+          <p class="hero-label fade-up">Ristorante · Pizzeria · Pforzheim</p>
+          <h1 class="hero-title fade-up delay-1">
+            <span class="hero-title-main">Cucina</span>
+            <span class="hero-title-accent">Autentica</span>
+          </h1>
+          <p class="hero-subtitle fade-up delay-2">
+            Handgemachte Pizza &amp; Pasta —<br />täglich frisch, mit Leidenschaft.
+          </p>
+          <div class="hero-ctas fade-up delay-3">
+            <a href="tel:0723110 1629" class="btn-primary">Tisch reservieren</a>
+            <a href="#mittagstisch" class="btn-outline">Zum Mittagstisch</a>
+          </div>
+          <div class="hero-scroll-hint fade-up delay-3">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MITTAGSTISCH -->
+    <section id="mittagstisch">
+      <div class="container">
+        <div class="mt-header fade-up">
+          <p class="section-label">Täglich frisch</p>
+          <h2 class="section-title">Mittagstisch</h2>
+          <div class="gold-divider"></div>
+          <p class="mt-info">
+            <strong>Montag bis Freitag</strong> · 11:30 – 13:30 Uhr · Ausgenommen an Feiertagen
+            <span class="mt-surcharge">+1,00 € bei Bestellung auf zwei Tellern</span>
+          </p>
+        </div>
+
+        <div class="mt-grid">
+          <div class="mt-card fade-up">
+            <div class="mt-card-type">Salat</div>
+            <div class="mt-card-body">
+              <h3 class="mt-card-name">Kleiner gemischter Salat</h3>
+            </div>
+            <div class="mt-card-price">5,50 €</div>
+          </div>
+          <div class="mt-card fade-up delay-1">
+            <div class="mt-card-type">Salat</div>
+            <div class="mt-card-body">
+              <h3 class="mt-card-name">Insalata Romana</h3>
+              <p class="mt-card-desc">Feta, Paprika, Oliven</p>
+            </div>
+            <div class="mt-card-price">10,50 €</div>
+          </div>
+          <div class="mt-card fade-up delay-2">
+            <div class="mt-card-type">Pasta</div>
+            <div class="mt-card-body">
+              <h3 class="mt-card-name">Penne</h3>
+              <p class="mt-card-desc">Schinken, Paprika, Sahnesauce</p>
+            </div>
+            <div class="mt-card-price">9,90 €</div>
+          </div>
+          <div class="mt-card fade-up delay-1">
+            <div class="mt-card-type">Pasta</div>
+            <div class="mt-card-body">
+              <h3 class="mt-card-name">Spaghetti</h3>
+              <p class="mt-card-desc">Mozzarella, Basilikum, Tomatensauce</p>
+            </div>
+            <div class="mt-card-price">9,90 €</div>
+          </div>
+          <div class="mt-card mt-card-featured fade-up delay-2">
+            <div class="mt-card-type">Pizza</div>
+            <div class="mt-card-body">
+              <h3 class="mt-card-name">Pizza Prosciutto</h3>
+              <p class="mt-card-desc">Schinken, Käse</p>
+            </div>
+            <div class="mt-card-price">9,90 €</div>
+          </div>
+          <div class="mt-card fade-up delay-3">
+            <div class="mt-card-type">Pizza</div>
+            <div class="mt-card-body">
+              <h3 class="mt-card-name">Pizza Melanzane</h3>
+              <p class="mt-card-desc">Aubergine, Zucchini, Käse</p>
+            </div>
+            <div class="mt-card-price">9,90 €</div>
+          </div>
+          <div class="mt-card mt-card-full fade-up">
+            <div class="mt-card-type">Fitness</div>
+            <div class="mt-card-body">
+              <h3 class="mt-card-name">Fitness-Teller</h3>
+              <p class="mt-card-desc">Gegrillte Hähnchenbrust, gemischter Salat</p>
+            </div>
+            <div class="mt-card-price">13,50 €</div>
+          </div>
+        </div>
+
+        <div class="mt-abo fade-up">
+          <div class="mt-abo-inner">
+            <div>
+              <p class="mt-abo-title">Wochenkarte per E-Mail</p>
+              <p class="mt-abo-desc">Verpasse keine Spezialitäten — erhalte die aktuelle Mittagskarte direkt in dein Postfach.</p>
+            </div>
+            <a href="mailto:info@allegro-pf.de?subject=Mittagskarte%20Abo" class="btn-primary">Jetzt anmelden</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÜBER UNS -->
+    <section id="ueber-uns">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content fade-up">
+            <p class="section-label">Unsere Geschichte</p>
+            <h2 class="section-title">Mit Leidenschaft<br />in Pforzheim</h2>
+            <div class="gold-divider"></div>
+            <p class="about-text">
+              Willkommen im Allegro — einem Ort, wo italienische Küchentradition und herzliche Gastfreundschaft aufeinandertreffen. Inhaber <strong>Artur Grießhaber</strong> hat es sich zur Aufgabe gemacht, authentische Geschmackserlebnisse direkt nach Pforzheim zu bringen.
+            </p>
+            <p class="about-text">
+              Jedes Gericht wird mit frischen Zutaten und echter Handwerkskunst zubereitet — von der knusprigen Pizza aus dem Steinofen bis zur cremigen Pasta al dente. Kein Halbfertigprodukt, kein Kompromiss.
+            </p>
+            <blockquote class="about-quote">
+              „Bei uns kommt die Leidenschaft direkt auf den Teller."
+            </blockquote>
+            <a href="#kontakt" class="btn-outline" style="margin-top: 32px; display: inline-block;">Besucht uns</a>
+          </div>
+          <div class="about-image-wrap fade-up delay-2">
+            <div class="about-image">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80&auto=format&fit=crop" alt="Restaurant Atmosphäre" loading="lazy" />
+            </div>
+            <div class="about-badge">
+              <span class="about-badge-icon">🍕</span>
+              <span class="about-badge-text">Frisch<br />jeden Tag</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEISEKARTE -->
+    <section id="speisekarte">
+      <div class="container">
+        <div class="menu-header fade-up">
+          <p class="section-label">Was wir lieben</p>
+          <h2 class="section-title">Unsere Karte</h2>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card fade-up">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80&auto=format&fit=crop" alt="Pizza" loading="lazy" />
+              <div class="menu-card-overlay"></div>
+              <span class="menu-card-emoji">🍕</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title">Pizza</h3>
+              <ul class="menu-card-items">
+                <li>Margherita</li>
+                <li>Prosciutto</li>
+                <li>Melanzane</li>
+                <li>& mehr</li>
+              </ul>
+              <div class="menu-card-price">ab 9,90 €</div>
+            </div>
+          </div>
+          <div class="menu-card fade-up delay-1">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80&auto=format&fit=crop" alt="Pasta" loading="lazy" />
+              <div class="menu-card-overlay"></div>
+              <span class="menu-card-emoji">🍝</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title">Pasta</h3>
+              <ul class="menu-card-items">
+                <li>Penne al Prosciutto</li>
+                <li>Spaghetti Pomodoro</li>
+                <li>& mehr</li>
+              </ul>
+              <div class="menu-card-price">ab 9,90 €</div>
+            </div>
+          </div>
+          <div class="menu-card fade-up delay-2">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80&auto=format&fit=crop" alt="Salate" loading="lazy" />
+              <div class="menu-card-overlay"></div>
+              <span class="menu-card-emoji">🥗</span>
+            </div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title">Salate</h3>
+              <ul class="menu-card-items">
+                <li>Insalata Romana</li>
+                <li>Fitness-Teller</li>
+                <li>& mehr</li>
+              </ul>
+              <div class="menu-card-price">ab 5,50 €</div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-cta fade-up">
+          <p class="menu-cta-text">Vollständige Karte? Ruf uns an oder schreib uns.</p>
+          <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;">
+            <a href="tel:0723110 1629" class="btn-primary">📞 07231 – 10 16 29</a>
+            <a href="mailto:info@allegro-pf.de" class="btn-outline">E-Mail schreiben</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="galerie">
+      <div class="container">
+        <div class="gallery-header fade-up">
+          <p class="section-label">Einblicke</p>
+          <h2 class="section-title">Atmosphäre</h2>
+          <div class="gold-divider"></div>
+        </div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item-tall fade-up" data-src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80&auto=format&fit=crop" alt="Restaurant" loading="lazy" />
+          <div class="gallery-overlay"><span class="gallery-zoom">＋</span></div>
+        </div>
+        <div class="gallery-item fade-up delay-1" data-src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80&auto=format&fit=crop" alt="Pizza" loading="lazy" />
+          <div class="gallery-overlay"><span class="gallery-zoom">＋</span></div>
+        </div>
+        <div class="gallery-item fade-up delay-2" data-src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80&auto=format&fit=crop" alt="Salat" loading="lazy" />
+          <div class="gallery-overlay"><span class="gallery-zoom">＋</span></div>
+        </div>
+        <div class="gallery-item gallery-item-wide fade-up delay-1" data-src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?w=800&q=80&auto=format&fit=crop" alt="Pasta" loading="lazy" />
+          <div class="gallery-overlay"><span class="gallery-zoom">＋</span></div>
+        </div>
+        <div class="gallery-item fade-up delay-2" data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80&auto=format&fit=crop" alt="Restaurant Innen" loading="lazy" />
+          <div class="gallery-overlay"><span class="gallery-zoom">＋</span></div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">✕</button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt">
+      <div class="container">
+        <div class="kontakt-header fade-up">
+          <p class="section-label">Wir freuen uns auf euch</p>
+          <h2 class="section-title">Besuch uns</h2>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="kontakt-grid">
+          <div class="kontakt-info fade-up">
+            <div class="kontakt-block">
+              <p class="kontakt-label">Adresse</p>
+              <p class="kontakt-value">Stuttgarter Straße 55<br />75179 Pforzheim</p>
+            </div>
+            <div class="kontakt-block">
+              <p class="kontakt-label">Telefon</p>
+              <a href="tel:0723110 1629" class="kontakt-value kontakt-link">07231 – 10 16 29</a>
+            </div>
+            <div class="kontakt-block">
+              <p class="kontakt-label">E-Mail</p>
+              <a href="mailto:info@allegro-pf.de" class="kontakt-value kontakt-link">info@allegro-pf.de</a>
+            </div>
+            <div class="kontakt-block">
+              <p class="kontakt-label">Mittagstisch</p>
+              <p class="kontakt-value">Mo – Fr · 11:30 – 13:30 Uhr<br /><span style="color:var(--text-muted);font-size:13px;">Ausgenommen an Feiertagen</span></p>
+            </div>
+            <a href="tel:0723110 1629" class="btn-primary" style="margin-top:16px; display:inline-block;">Jetzt anrufen &amp; reservieren</a>
+          </div>
+          <div class="kontakt-map fade-up delay-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2611.752!2d8.698!3d48.8874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47974614a2fb3355%3A0x1a0f5c1234567890!2sStuttgarter%20Str.%2055%2C%2075179%20Pforzheim!5e0!3m2!1sde!2sde!4v1718000000000"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Allegro Restaurant Pforzheim">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
-  <footer id="footer"><!-- Task 8 --></footer>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-text">Allegro</span>
+          <span class="logo-sub">Pforzheim</span>
+        </div>
+        <p class="footer-tagline">Cucina Autentica · Handgemacht mit Leidenschaft</p>
+        <nav class="footer-links">
+          <a href="https://allegro-pf.de/impressum" target="_blank" rel="noopener">Impressum</a>
+          <a href="https://allegro-pf.de/datenschutzerklaerung" target="_blank" rel="noopener">Datenschutz</a>
+          <a href="https://allegro-pf.de/cookie-richtlinie" target="_blank" rel="noopener">Cookie-Richtlinie</a>
+        </nav>
+        <p class="footer-copy">&copy; 2026 Allegro Pizzeria &amp; Restaurant · Inhaber: Artur Grießhaber</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
